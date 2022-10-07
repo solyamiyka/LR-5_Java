@@ -26,9 +26,7 @@ public class Income {
         this.sizeOfIncome = sizeOfIncome;
     }
 
-    public double getSizeOfTax() {
-        return sizeOfTax;
-    }
+    public double getSizeOfTax() { return sizeOfTax; }
 
     public void setSizeOfTax(double sizeOfTax) {
         this.sizeOfTax = sizeOfTax;
