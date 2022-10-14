@@ -12,9 +12,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         MainMenu menu = new MainMenu();
 
-        /*System.out.println("\n Available commands: ");
-        menu.printAllCommands();*/
-
         while(true){
             System.out.println("\n Available commands: ");
             menu.printAllCommands();
