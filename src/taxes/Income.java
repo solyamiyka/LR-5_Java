@@ -2,8 +2,8 @@ package taxes;
 
 public class Income {
 
-    public String nameOfIncome;
-    public double sizeOfIncome;
+    private String nameOfIncome;
+    private double sizeOfIncome;
 
     public double sizeOfTax;
     public double percentageOfTax;
