@@ -1,25 +1,31 @@
 import menu.*;
-import taxes.Invoker;
 import taxes.Taxes;
+
+import java.util.Objects;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Taxes person = new Taxes();
+        //Taxes person = new Taxes();
 
-        MenuItem defSet = new MenuDefineSet(person);
-        MenuItem defSum = new MenuDefineSum(person);
-        MenuItem search = new MenuSearchTaxes(person);
-        MenuItem sort = new MenuSortTaxes(person);
+        Scanner sc = new Scanner(System.in);
+        MainMenu menu = new MainMenu();
 
+        /*System.out.println("\n Available commands: ");
+        menu.printAllCommands();*/
 
-        Invoker person1 = new Invoker(defSet,defSum,search,sort);
-
-        person1.defineSetTaxes();
-        person1.defineSumTaxes();
-
-        person1.searchTaxes();
-        person1.sortTaxes();
+        while(true){
+            System.out.println("\n Available commands: ");
+            menu.printAllCommands();
+            System.out.println(" Input your command(if you want to exit - print 'quit'): ");
+            String command = sc.next();
+            if(Objects.equals(command, "quit")){
+                break;
+            }
+            menu.execute(command);
+        }
 
     }
+
 }
