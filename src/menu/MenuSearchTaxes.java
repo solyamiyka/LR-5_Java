@@ -1,6 +1,9 @@
 package menu;
 
+import taxes.Income;
 import taxes.Taxes;
+
+import java.util.ArrayList;
 
 public class MenuSearchTaxes implements MenuItem{
 
