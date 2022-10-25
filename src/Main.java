@@ -1,13 +1,9 @@
 import menu.*;
-import taxes.Taxes;
-
 import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-        //Taxes person = new Taxes();
 
         Scanner sc = new Scanner(System.in);
         MainMenu menu = new MainMenu();
